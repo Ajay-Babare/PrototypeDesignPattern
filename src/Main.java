@@ -8,10 +8,19 @@ public class Main {
 		networkConnection1.loadImportantData();
 		
 		System.out.println(networkConnection1);
-		System.out.println("***************");
+
 		
-		NetworkConnection networkConnecction2 = (NetworkConnection)networkConnection1.clone();
-		System.out.println(networkConnecction2);
+		NetworkConnection networkConnection2 = (NetworkConnection)networkConnection1.clone();
+		System.out.println(networkConnection2);
+		
+		NetworkConnection networkConnection3 = (NetworkConnection)networkConnection1.clone();
+		System.out.println(networkConnection3);
+		networkConnection1.getDomains().remove(0);
+		
+		System.out.println("***************");
+		System.out.println(networkConnection1);
+		System.out.println(networkConnection2);
+		System.out.println(networkConnection3);
 		
 	}
 
